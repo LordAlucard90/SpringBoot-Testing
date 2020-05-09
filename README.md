@@ -11,3 +11,4 @@ Each step contains a readme with the explanation of the step and, if is change f
 
 1. [Introduction To Testing](00%20-%20Introduction%20To%20Testing/readme.md)
 1. [Introduction to JUnit5](01%20-%20Introduction%20To%20JUnit5/readme.md)
+1. [JUnit5 Basics](02%20-%20JUnit5%20Basics/readme.md)
