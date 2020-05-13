@@ -10,8 +10,8 @@
 - [Timeouts](#timeouts)
 - [Assumptions](#assumptions)
 - [Conditional Tests](#conditional-tests)
-- [](#)
-- [](#)
+- [AssertJ](#assertj)
+- [Hamcrest](#hamcrest)
 
 ---
 
@@ -173,10 +173,20 @@ void onUserPippo() {
 
 ---
 
-## 
+## AssertJ
+AssertJ's documentation can be found [here](https://joel-costigliola.github.io/assertj/).
 
+This library helps to create more verbose assertions, for example:
+```java
+assertThat("Actual").isEqualTo("Expected");
+```
 
 ---
 
-## 
+## Hamcrest
+Java Hamcrest's documentation can be found [here](http://hamcrest.org/JavaHamcrest/).
 
+This library helps to create more verbose assertions, using matchers:
+```java
+assertThat("Actual", is("Expected"));
+```
