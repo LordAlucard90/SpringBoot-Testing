@@ -12,7 +12,7 @@ class TimeoutsExampleTest {
         assertTimeout(
                 Duration.ofMillis(100),
                 () -> {
-                    Thread.sleep(100);
+                    Thread.sleep(10);
                     System.out.println("text");
                 }
         );

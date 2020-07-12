@@ -26,15 +26,15 @@ class AssertionsExampleTest {
         String actualWrong = "Not Some text";
         assertEquals(
                 actual,
-//                actualWrong,
+//                actualWrong, // uncomment to make it mail
                 assertionsExample.someText(),
                 "This has to fail"
         );
 
         // the first one must succeed to reach this one
         assertEquals(
-//                actual,
-                actualWrong,
+                actual,
+//                actualWrong, // uncomment to make it mail
                 assertionsExample.someText(),
                 () -> "Expensive way to say: " + "This has to fail. "
         );

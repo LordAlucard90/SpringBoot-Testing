@@ -29,16 +29,16 @@ class GroupedAssertionsExampleTest {
                 "Testing initialization with grouped assertions",
                 () -> {
                     assertEquals(
-//                            string,
-                            wrongString,
+                            string,
+//                            wrongString, // uncomment to make it mail
                             groupedAssertionsExample.string,
-                            "This test must fail."
+                            "This test must fail." // uncomment to make it mail
                     );
                 },
                 () -> {
                     assertEquals(
-//                            anInt,
-                            wrongInt,
+                            anInt,
+//                            wrongInt, // uncomment to make it mail
                             groupedAssertionsExample.anInt,
                             "This test must fail."
                     );
