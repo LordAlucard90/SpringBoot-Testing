@@ -39,4 +39,4 @@ It is possible to run this command in three different ways:
 
 ## Gradle
 
-It is possible to do the same also with Gradle but I'll not write it because I prefer maven.
+It is possible to do the same also with Gradle but I'll not write it because I prefer Maven.
