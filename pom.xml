@@ -13,6 +13,7 @@
         <module>01 - Introduction To JUnit5</module>
         <module>02 - JUnit5 Basics</module>
         <module>03 - Advanced JUnit5</module>
+        <module>04 - Test Execution</module>
     </modules>
 
     <properties>
@@ -30,6 +31,7 @@
         <maven.plugin.compiler.version>3.8.1</maven.plugin.compiler.version>
         <maven.plugin.surfire.version>2.22.2</maven.plugin.surfire.version>
         <maven.plugin.failsafe.version>2.22.0</maven.plugin.failsafe.version>
+        <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -94,8 +96,31 @@
                             --illegal-access=permit
                         </argLine>
                     </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven-site-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>${maven.plugin.surfire.version}</version>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
