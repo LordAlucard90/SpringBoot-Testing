@@ -4,10 +4,12 @@
 
 - [Coverage](#coverage)
 - [Maven Surfire Plugin](#maven-surfire-plugin)
-- [Maven FailSafe Plugin](#Maven-failsafe-plugin)
+- [Maven FailSafe Plugin](#maven-failsafe-plugin)
 - [Surfire Test Reports](#surfire-test-reports)
-- [](#)
-- [](#)
+- [Maven Execute Tagged Unit Tests](#maven-execute-tagged-unit-tests)
+- [Gradle](#grandle)
+
+---
 
 ## Coverage
 
@@ -80,11 +82,28 @@ information about the tests executions.
 
 ---
 
-##
+## Maven Execute Tagged Unit Tests
 
+It is possible to execute only some tagged tests improving the pom configuration
+in this way:
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>${maven.plugin.surfire.version}</version>
+    <configuration>
+        <argLine>
+            --illegal-access=permit
+        </argLine>
+        <groups>example</groups>
+        <excludedGroups>example-interface</excludedGroups>
+    </configuration>
+</plugin>
+```
+It is possible to combine groups with `&, !, |` and put the configuration into maven profiles.
 
 ---
 
-##
+## Grandle
 
-
+All of this can be done also for Gradle but i'm not interested in it at the moment.
