@@ -41,3 +41,8 @@ Each step contains a readme with the explanation of the step and, if is change f
     - [Surfire Test Reports](04%20-%20Test%20Execution/readme.md#surfire-test-reports)
     - [Maven Execute Tagged Unit Tests](04%20-%20Test%20Execution/readme.md#maven-execute-tagged-unit-tests)
     - [Gradle](04%20-%20Test%20Execution/readme.md#grandle)
+- [Migrating From JUnit4 to 5](05%20-%20Migrating%20From%20JUnit4%20to%205)
+    - [Main Differences](05%20-%20Migrating%20From%20JUnit4%20to%205#main-differences)
+    - [Dependencies And Configuration](05%20-%20Migrating%20From%20JUnit4%20to%205#dependencies-and-configuration)
+    - [Converting Tests](05%20-%20Migrating%20From%20JUnit4%20to%205#converting-tests)
+    - [Removing JUnit4](05%20-%20Migrating%20From%20JUnit4%20to%205#removing-junit4)
