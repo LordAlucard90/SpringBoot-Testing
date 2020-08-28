@@ -15,6 +15,7 @@
         <module>03 - Advanced JUnit5</module>
         <module>04 - Test Execution</module>
         <module>06 - Mockito Basics</module>
+        <module>07 - Behaviour Driven Development</module>
     </modules>
 
     <properties>

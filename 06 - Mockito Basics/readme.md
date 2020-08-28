@@ -6,7 +6,7 @@
 - [Maven Dependencies](#maven-dependencies)
 - [Inline Mocks](#inline-mocks)
 - [Annotation Mocks](#annotation-mocks)
-- [Junit Extension](#junit-extension)
+- [Junit Mockito Extension](#junit-mockito-extension)
 - [Mocks Injection](#mocks-injection)
 - [Verify Mocks Interaction](#verify-mocks-interaction)
 - [Returning Values Form Mocks](#returning-values-form-mocks)
