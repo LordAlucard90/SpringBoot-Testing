@@ -14,6 +14,7 @@
         <module>02 - JUnit5 Basics</module>
         <module>03 - Advanced JUnit5</module>
         <module>04 - Test Execution</module>
+        <module>06 - Mockito Basics</module>
     </modules>
 
     <properties>
@@ -32,6 +33,7 @@
         <maven.plugin.surfire.version>2.22.2</maven.plugin.surfire.version>
         <maven.plugin.failsafe.version>2.22.0</maven.plugin.failsafe.version>
         <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
+        <mockito-junit-jupiter.version>3.4.4</mockito-junit-jupiter.version>
     </properties>
 
     <dependencyManagement>
@@ -65,6 +67,18 @@
                 <groupId>org.hamcrest</groupId>
                 <artifactId>hamcrest-library</artifactId>
                 <version>${hamcrest-library.version}</version>
+            </dependency>
+
+            <!-- mockito -->
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito-junit-jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-junit-jupiter</artifactId>
+                <version>${mockito-junit-jupiter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

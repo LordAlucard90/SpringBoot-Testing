@@ -7,6 +7,10 @@ The repository is divided by the main topics and each one is composed by the dif
 (step is not equal to video).
 Each step contains a readme with the explanation of the step and, if is change from the previous step, the new code.
 
+The course has some assignments,
+some of them are based on code coming from other repositories that I do not want to copy into this one,
+therefore not all them are reported.
+
 ## Content
 
 1. [Introduction To Testing](00%20-%20Introduction%20To%20Testing/readme.md)
@@ -46,3 +50,13 @@ Each step contains a readme with the explanation of the step and, if is change f
     - [Dependencies And Configuration](05%20-%20Migrating%20From%20JUnit4%20to%205#dependencies-and-configuration)
     - [Converting Tests](05%20-%20Migrating%20From%20JUnit4%20to%205#converting-tests)
     - [Removing JUnit4](05%20-%20Migrating%20From%20JUnit4%20to%205#removing-junit4)
+- [Mockito Basics](06%20-%20Mockito%20Basics)
+    - [Introduction](06%20-%20Mockito%20Basics#introduction)
+    - [Maven Dependencies](06%20-%20Mockito%20Basics#maven-dependencies)
+    - [Inline Mocks](06%20-%20Mockito%20Basics#inline-mocks)
+    - [Annotation Mocks](06%20-%20Mockito%20Basics#annotation-mocks)
+    - [Junit Extension](06%20-%20Mockito%20Basics#junit-extension)
+    - [Mocks Injection](06%20-%20Mockito%20Basics#mocks-injection)
+    - [Verify Mocks Interaction](06%20-%20Mockito%20Basics#verify-mocks-interaction)
+    - [Returning Values Form Mocks](06%20-%20Mockito%20Basics#returning-values-form-mocks)
+    - [Argument Matchers](06%20-%20Mockito%20Basics#argument-matchers)
