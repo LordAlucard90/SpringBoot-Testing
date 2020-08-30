@@ -16,6 +16,7 @@
         <module>04 - Test Execution</module>
         <module>06 - Mockito Basics</module>
         <module>07 - Behaviour Driven Development</module>
+        <module>08 - Advanced Mockito</module>
     </modules>
 
     <properties>
