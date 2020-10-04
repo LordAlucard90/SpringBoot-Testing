@@ -17,6 +17,7 @@
         <module>06 - Mockito Basics</module>
         <module>07 - Behaviour Driven Development</module>
         <module>08 - Advanced Mockito</module>
+        <module>09 - Tests With Spring Framework</module>
     </modules>
 
     <properties>
@@ -36,10 +37,20 @@
         <maven.plugin.failsafe.version>2.22.0</maven.plugin.failsafe.version>
         <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
         <mockito-junit-jupiter.version>3.4.4</mockito-junit-jupiter.version>
+
+        <spring-framework.version>5.2.8.RELEASE</spring-framework.version>
+        <spring-data-jpa.version>2.3.3.RELEASE</spring-data-jpa.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+            </dependency>
+
             <!-- junit -->
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
@@ -81,6 +92,28 @@
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-junit-jupiter</artifactId>
                 <version>${mockito-junit-jupiter.version}</version>
+            </dependency>
+
+            <!-- Spring -->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>${spring-data-jpa.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>javax.persistence-api</artifactId>
+                <version>2.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
