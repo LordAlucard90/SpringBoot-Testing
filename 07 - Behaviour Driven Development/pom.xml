@@ -10,8 +10,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>springboottesting.mokitobdd</groupId>
-    <artifactId>mokito-bdd</artifactId>
+    <groupId>springboottesting.mockitobdd</groupId>
+    <artifactId>mockito-bdd</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

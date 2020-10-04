@@ -10,8 +10,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>springboottesting.mokitobasics</groupId>
-    <artifactId>mokito-basics</artifactId>
+    <groupId>springboottesting.mockitobasics</groupId>
+    <artifactId>mockito-basics</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

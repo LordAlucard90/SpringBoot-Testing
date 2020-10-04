@@ -1,15 +1,17 @@
+package springboottesting.advancedmockito;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InOrder;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static org.mockito.BDDMockito.then;
 import static org.mockito.BDDMockito.willDoNothing;
+import static org.mockito.Mockito.timeout;
 
 @ExtendWith(MockitoExtension.class)
-class VerifyInteractionsOrderExampleTest {
+class VerifyInteractionsWithinSpecifiedTimeExampleTest {
     @Mock(lenient = true)
     private InjectedClass injectedClassMock;
 
@@ -17,19 +19,15 @@ class VerifyInteractionsOrderExampleTest {
     private TestedClass testedClass;
 
     @Test
-    void orderBDDTest() {
+    void interactionsWithinSpecifiedTimeBDDTest() {
         // given
-        willDoNothing().given(injectedClassMock).first();
-        willDoNothing().given(injectedClassMock).second();
-
-        InOrder inOrder = Mockito.inOrder(injectedClassMock);
+        willDoNothing().given(injectedClassMock).someMethod();
 
         // when
         testedClass.testMethod();
 
         // then
-        inOrder.verify(injectedClassMock).first();
-        inOrder.verify(injectedClassMock).second();
+        then(injectedClassMock).should(timeout(100)).someMethod();
     }
 
     private static class TestedClass {
@@ -40,13 +38,11 @@ class VerifyInteractionsOrderExampleTest {
         }
 
         public void testMethod() {
-            injectedClass.first();
-            injectedClass.second();
+            injectedClass.someMethod();
         }
     }
 
     private static class InjectedClass {
-        public void first() { }
-        public void second() { }
+        public void someMethod() { }
     }
 }

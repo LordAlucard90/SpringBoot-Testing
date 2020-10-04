@@ -1,4 +1,4 @@
-package springboottesting.mokitobdd;
+package springboottesting.mockitobasics;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -8,10 +8,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class BDDMockitoExampleTest {
+class ReturningValuesFormMocksExampleTest {
     @Mock
     private InjectedClass injectedClassMock;
 
@@ -20,26 +20,16 @@ class BDDMockitoExampleTest {
 
     @Test
     void evenTest() {
-        // given
-        given(injectedClassMock.generateAnIntValue()).willReturn(2);
+        when(injectedClassMock.generateAnIntValue()).thenReturn(2);
 
-        // when
-        boolean isEven = testedClass.isEven();
-
-        // then
-        assertTrue(isEven);
+        assertTrue(testedClass.isEven());
     }
 
     @Test
     void oddTest() {
-        // given
-        given(injectedClassMock.generateAnIntValue()).willReturn(1);
+        when(injectedClassMock.generateAnIntValue()).thenReturn(1);
 
-        // when
-        boolean isEven = testedClass.isEven();
-
-        // then
-        assertFalse(isEven);
+        assertFalse(testedClass.isEven());
     }
 
     private static class TestedClass {

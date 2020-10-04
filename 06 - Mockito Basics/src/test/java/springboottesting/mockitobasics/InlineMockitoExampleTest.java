@@ -1,4 +1,4 @@
-package springboottesting.mokitobasics;
+package springboottesting.mockitobasics;
 
 import org.junit.jupiter.api.Test;
 
