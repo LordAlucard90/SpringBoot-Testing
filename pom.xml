@@ -18,6 +18,7 @@
         <module>07 - Behaviour Driven Development</module>
         <module>08 - Advanced Mockito</module>
         <module>09 - Tests With Spring Framework</module>
+        <module>10 - Spring Mock MVC</module>
     </modules>
 
     <properties>
@@ -114,6 +115,16 @@
                 <groupId>javax.persistence</groupId>
                 <artifactId>javax.persistence-api</artifactId>
                 <version>2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>2.0.1.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
