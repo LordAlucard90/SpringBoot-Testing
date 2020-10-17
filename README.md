@@ -88,3 +88,8 @@ therefore not all them are reported.
 1. [Spring Boot](11%20-%20Spring%20Boot)
     - [Spring Boot Test](11%20-%20Spring%20Boot#spring-boot-test)
     - [Context Load Test](11%20-%20Spring%20Boot#context-load-test)
+1. [Spring MVC Rest](12%20-%20Spring%20MCV%20Rest)
+    - [Jayway JsonPath](12%20-%20Spring%20MCV%20Rest#jayway-jsonpath)
+    - [Custom Object Mapper](12%20-%20Spring%20MCV%20Rest#custom-object-mapper)
+    - [WebMvc Test Slice](12%20-%20Spring%20MCV%20Rest#webmvc-test-slice)
+    - [SpringBootTest](12%20-%20Spring%20MCV%20Rest#springboottest)

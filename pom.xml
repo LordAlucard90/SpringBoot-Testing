@@ -19,6 +19,7 @@
         <module>08 - Advanced Mockito</module>
         <module>09 - Tests With Spring Framework</module>
         <module>10 - Spring Mock MVC</module>
+        <module>12 - Spring MCV Rest</module>
     </modules>
 
     <properties>
@@ -41,6 +42,7 @@
 
         <spring-framework.version>5.2.8.RELEASE</spring-framework.version>
         <spring-data-jpa.version>2.3.3.RELEASE</spring-data-jpa.version>
+        <spring-boot-starter.version>2.3.4.RELEASE</spring-boot-starter.version>
     </properties>
 
     <dependencyManagement>
@@ -111,6 +113,8 @@
                 <artifactId>spring-test</artifactId>
                 <version>${spring-framework.version}</version>
             </dependency>
+
+            <!-- Validation -->
             <dependency>
                 <groupId>javax.persistence</groupId>
                 <artifactId>javax.persistence-api</artifactId>
@@ -125,6 +129,41 @@
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>4.0.1</version>
+            </dependency>
+
+            <!-- Spring Boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${spring-boot-starter.version}</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>${spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>${spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot-starter.version}</version>
+            </dependency>
+
+            <!-- In Memory DB -->
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>1.4.200</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
