@@ -1,0 +1,50 @@
+= Example Service Docs
+LordAlucard90;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+Spring REST Docs with JUnit 5 Example.
+
+GET Example
+
+One showing how to make a request using cURL:
+
+include::{snippets}/v1/examples-get/curl-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}/v1/examples-get/http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}/v1/examples-get/http-response.adoc[]
+
+Response Body:
+include::{snippets}/v1/examples-get/response-body.adoc[]
+
+Response Fields:
+include::{snippets}/v1/examples-get/response-fields.adoc[]
+
+NEW Example
+
+One showing how to make a request using cURL:
+
+include::{snippets}/v1/examples-post/curl-request.adoc[]
+
+One showing the HTTP request:
+
+include::{snippets}/v1/examples-post/http-request.adoc[]
+
+And one showing the HTTP response:
+
+include::{snippets}/v1/examples-post/http-response.adoc[]
+
+Response Body:
+include::{snippets}/v1/examples-post/response-body.adoc[]
+
+Request Fields
+include::{snippets}/v1/examples-post/request-fields.adoc[]
+
+Response Fields:
+include::{snippets}

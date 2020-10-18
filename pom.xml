@@ -21,6 +21,7 @@
         <module>10 - Spring Mock MVC</module>
         <module>12 - Spring MCV Rest</module>
         <module>13 - Wiremock</module>
+        <module>14 - Spring MVC Rest Docs</module>
     </modules>
 
     <properties>
