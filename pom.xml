@@ -20,6 +20,7 @@
         <module>09 - Tests With Spring Framework</module>
         <module>10 - Spring Mock MVC</module>
         <module>12 - Spring MCV Rest</module>
+        <module>13 - Wiremock</module>
     </modules>
 
     <properties>

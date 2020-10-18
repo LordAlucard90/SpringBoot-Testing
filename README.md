@@ -93,3 +93,8 @@ therefore not all them are reported.
     - [Custom Object Mapper](12%20-%20Spring%20MCV%20Rest#custom-object-mapper)
     - [WebMvc Test Slice](12%20-%20Spring%20MCV%20Rest#webmvc-test-slice)
     - [SpringBootTest](12%20-%20Spring%20MCV%20Rest#springboottest)
+1. [Wiremock](13%20-%20Wiremock)
+    - [Intro](13%20-%20Wiremock#intro)
+    - [Standalone](13%20-%20Wiremock#standalone)
+    - [Recording](13%20-%20Wiremock#recording)
+    - [Testing](13%20-%20Wiremock#testing)
